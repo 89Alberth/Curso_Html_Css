@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+text-align: center;
+font-size: 3rem;
+background-color: antiquewhite;
+padding: 2rem 0;
+}
+
+h2{
+    font-size: 2.2rem;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color:antiquewhite;
+}
+
+.cards{
+    background-color: brown;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+
+}
+
+.cards__text{
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width:720px) {
+    h1{
+        font-size: 4rem;
+    }
+    .conteiner{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .cards{
+        flex-basis: calc(33% - 1.5rem);
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: brown;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .card{
+            width: 350px;
+            color: #585858;
+            padding: 25px;
+            background-color: antiquewhite;
+            clip-path: polygon(35px 0, 100% 0, 100% 100%,0% 100%,0% 35px);
+            position: relative;
+            
+        }
+        
+        /* .canto{
+            width: 45px;
+            height: 45px;
+            background-image: linear-gradient(135deg,transparent, transparent 20%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: none;
+        } */
+
+         .canto2{
+            width: 35px;
+            height: 35px;
+            background-color: rgb(46, 45, 45);
+            filter: drop-shadow(2px 2px 5px black);
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: none;
+        } 
+
+
+    </style>
+</head>
+<body>
+    <h1>Pratica clip-path</h1>
+
+    <div class="card shadow">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis aut exercitationem rerum voluptatem quaerat labore, deleniti quam temporibus quos. Tenetur exercitationem id quia, praesentium tempore reiciendis, ipsam fuga neque, cum vel dolorum.</p>
+        <div class="canto2"></div>
+    </div>
+</body>
+</html>

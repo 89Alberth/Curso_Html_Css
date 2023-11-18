@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(192, 192, 192);
+}
+
+article{
+    margin-top: 30px;
+    padding: 40px 20px 20px 20px;
+    background-color: white;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.322);
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 0 5px black;
+}
+
+.header{
+    background-image: url(imagens/bg-3.jpg);
+    background-size: cover;
+    background-position:  right center;
+    height: 700px;
+    
+}
+
+.menu_main{
+    text-align: right;
+    margin-right: 100px;
+}
+
+.menu_main ul li{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-size: 1.2em;
+    margin-right: 30px;
+    margin-top: 40px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+}
+
+.menu_main ul li:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.title_header{
+    text-align: center;
+    margin-top: 250px;
+}
+
+.title_header h1{
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-size: 56px;
+    color: white;
+}
+
+.title_header p{
+    margin-top: 50px;
+    border-radius: 5px;
+    font-size: 22px;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.534);
+    padding: 15px;
+    border-bottom: 3px solid white;
+}
+
+.main_conteiner{
+    width: 80%;
+    margin: auto;
+    padding: 0 50px;
+}
+
+.subtittle{
+    background-color: rgb(231, 231, 231);
+    border-bottom: 3px solid rgba(99, 99, 99, 0.534);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.content_p{
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.button_more{
+    cursor: pointer;
+    background-color: #0000005d;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+}
+
+.button_more:hover{
+    background-color: black;
+    text-decoration: underline;
+    transition: all 1s;
+}

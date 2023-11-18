@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Has</title>
+    <style>
+        caption{
+            font-size: 24px;
+        }
+        table{
+            width: 500px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;  
+        }
+
+        td,th{
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid black; 
+            
+        }
+
+        th{
+            background-color: black;
+            color: white;
+        }
+
+        tr:has(input:checked) {
+            background-color: rgb(161, 161, 161);
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de dados</caption>
+        <thead>
+            <tr>
+                <tr>
+                    <th>Assina-le</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                </tr>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Samantha Sims</td>
+                <td>samantha.sims@example.com</td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Alan Marshall</td>
+                <td>alan.marshall@example.com</td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>cassandra obrien</td>
+                <td>cassandra.obrien@example.com</td>
+            </tr>
+
+            <tr>
+                <label for="">
+                    <td><input type="checkbox"></td>
+                </label>
+                <td>sherry barnes</td>
+                <td>sherry.barnes@example.com</td>
+            </tr>
+
+            <tr>
+                <label for="">
+                    <td><input type="checkbox"></td>
+                </label>
+                <td>Gladys Gutierrez</td>
+                <td>gladys.gutierrez@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

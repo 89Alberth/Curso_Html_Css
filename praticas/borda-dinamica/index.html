@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Dinâmica</title>
+    <style>
+        a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 26px;
+            color: black;
+            padding: 10px;
+            position: relative;
+            text-transform: uppercase;
+        }
+        
+        nav a::after
+        {
+            transition: all 1s;
+            content: '';
+            width: 0;
+            height: 5px;
+            background-color: rgb(46, 0, 250);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        nav a:hover:after
+        {
+            content: '';
+            width: 100%;
+        }
+
+        ul
+        {
+            
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        ul li
+        {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+                <a href="">
+                    <li>Inicio</li>
+                </a>
+                <a href="">
+                    <li>Sobre</li>
+                </a>
+                <a href="">
+                    <li>Contatos</li>
+                </a>
+                <a href="">
+                    <li>Trabalhos</li>
+                </a>
+        </ul>
+
+    </nav>
+</body>
+</html>

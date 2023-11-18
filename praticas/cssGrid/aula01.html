@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid</title>
+    <style>
+        .grid__conteiner{
+            background-color: rgb(30, 31, 31);
+            height: 100vh;
+            color: white;
+            font-size: 36px;
+            gap: 5px ;
+
+        }
+
+        .grid__conteiner :nth-child(even){
+            background-color: rgb(181, 184, 183);
+        }
+
+        .grid__conteiner :nth-child(odd){
+            background-color: rgb(44, 42, 42);
+        }
+
+        .grid__conteiner{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+          
+        }
+
+        .grid__conteiner :nth-child(1){
+            background-color: red;
+            grid-column:span 2 ;
+            grid-row: 1;
+           
+        }
+
+        .grid__conteiner :nth-child(2) {
+            background-color: blue;
+            grid-column: 3;
+            grid-row: span 3;
+           
+        }
+
+        .grid__conteiner :nth-child(4) {
+            background-color: rgb(0, 255, 128);
+            grid-area: 2 / 2 / 4 / 3;
+           
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="grid__conteiner">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>  
+    </div>
+</body>
+</html>

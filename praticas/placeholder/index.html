@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+
+        .form{
+            position: relative;
+           
+        }
+
+       
+        .form label{
+            color: rgb(0, 214, 0);
+            font-size: 14px;
+            position: absolute;
+            top: 18px;
+            left: 10px;
+            opacity: .6;
+            transition: left .5s, top .5s, opacity .5s;
+        }
+
+        .form input:focus ~ label{
+            top:-10px;
+            opacity: 1;
+            background-color: rgb(253, 253, 253);
+        }
+
+        .form input{
+            width: 400px;
+            font-size: 25px;
+            background-color: transparent;
+            border-radius: 10px;
+            outline: none;
+            border: 2px solid rgb(0, 214, 0);
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form">
+        <input type="text" id="nome" autocomplete="off" required>
+        <label for="nome">Nome Completo</label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/reset.css">
+    <link rel="stylesheet" href="estilo/cadastro.css">
+    <title>Cadastra-se</title>
+</head>
+<body>
+    <form action="" method="post" autocomplete="off">
+        <fieldset>
+            <legend class="title">Cadastre-se</legend>
+
+            <label for="user">Usuário</label>
+            <input type="text" required  id="user" name="user">
+
+            <label for="email">Email</label>
+            <input type="email"  id="email" name="email" required>
+
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" required>
+
+            <div class="footer">
+                <button class="btn" type="submit">Cadastre-se</button>
+
+                <div class="footer__links">
+                    Já possui cadastro?<a href="login.html"> Faça login.</a>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

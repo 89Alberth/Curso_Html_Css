@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            width: 80%;
+            border-collapse: collapse;
+            margin: auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        tbody{
+            background-color: rgb(250, 250, 229);
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        th{
+            border: 1px solid black; 
+            padding: 15px;
+            background-color: beige;
+        }
+
+        tr:nth-child(odd){
+            background-color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de preços dos cursos</caption>
+
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Cursos</th>
+                <th>Investimento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Design</td>
+                <td>InDesign</td>
+                <td>R$ 1.000.00</td>
+            </tr>
+
+            <tr>
+                <td>Photoshop</td>
+                <td>R$ 1.000.00</td>
+            </tr>
+
+            <tr>
+                <td>Ilustrator</td>
+                <td>R$ 1.000.00</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>HTML</td>
+                <td>R$ 1.000.00</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>R$ 1.000.00</td>
+            </tr>
+
+            <tr>
+                <td>JavaScript</td>
+                <td>R$ 1.000.00</td>
+            </tr>
+
+            <tr>
+                <td>Php</td>
+                <td>R$ 1.000.00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td colspan="3">Preços sujeito a alterações sem aviso prévio</td>
+        </tfoot>
+    </table>
+</body>
+</html>

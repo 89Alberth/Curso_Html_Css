@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My components</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="main-header">
+
+        <nav class="nav-menu"> 
+            <a href="#">
+                <img src="imagens/perfil.png" alt="Alberth Renato da costa santana" class="perfil-img">
+            </a>
+
+        
+            <ul>
+                
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+
+                <li>
+                    <a href="tipografia.html">Tipografia</a>
+                </li>
+
+
+                <li>
+                    <a href="cards.html">Cards</a>
+                </li>
+
+
+                <li>
+                    <a href="listas.html">Listas</a>
+                </li>
+
+
+                <li>
+                    <a href="formularios.html">Formulário</a>
+                </li>
+
+
+                <li>
+                    <a href="botoes.html">Botões</a>
+                </li>
+
+
+                <li>
+                    <a href="tabelas.html">Tabelas</a>
+                </li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1>My components</h1>
+
+        <article class="hightlight">
+            <h2>Tipografia</h2>
+
+            <p>
+                A Tipografia transmite nossas definições de tamanhos e espaçamento e deve ser utilizada respeitando a hierarquia dos elementos na interface.
+            </p>
+        </article>
+
+        <section>
+            <h3>Elementos</h3>
+
+            <article class="sub-title__tipografia">
+                <h4>Textos</h4>
+                <p>Esse texto esta escrito em <b>negrito</b> e esse texto é um<strong> texto forte</strong>.</p>
+                <p>Esse texto está <i>em itálico</i> e esse texto está <em>com ênfase</em>.</p>
+                <p>Isto é um texto escrito de forma <u class="underline">erada</u> e isto aqui é um<a href="#"> link</a>.</p>
+            </article>
+
+
+            <article class="sub-title__tipografia">
+                <h4>Sobescrito e subscrito</h4>
+                <p>3 <sup>2</sup> é igual a 9</p>
+                <p>A fórmula da água é H<sub>2</sub>O</p>
+            </article>
+
+
+            <article class="sub-title__tipografia">
+                <h4>Abreviações</h4>
+                <p>Para criar páginas na web precisamos aprender sobre <a href="#html"> <abbr title="HiperText markup language">HTML</abbr></p></a>
+                <p>O <dfn id="html"><abbr title="HiperText markup language">HTML</abbr></dfn> é a principal linguagem da web onde podemos incluir nosso conteúdo de forma sêmantica</p>      
+            </article>
+
+            <article class="sub-title__tipografia">
+                <h4>Citações</h4>
+                <blockquote>
+                    <p>O ruim não é ter trabalho.O ruim ter que trabalhar.</p>
+                    <cite>Seu Madruga</cite>
+                </blockquote>
+
+                <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+                    <p>O Elemento HTML &lt;blockquote&gt; (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação.</p>
+                    <cite>Mdn</cite>
+                </blockquote>
+
+                <p>Segundo o seu madruga <q>a vingança nunca é plena mata a alma e a envenena</q>.</p>
+
+                <p>
+                    De acordo com o site da mozilla,
+                    <q cite="https://www.mozilla.org/pt-BR/about/history/details/"
+                      >Firefox 1.0 foi lançado em 2004 e se tornou um grande sucesso.</q
+                    >
+                  </p>
+            </article>
+
+            <article class="sub-title__tipografia">
+                <h4>Coisas de computador</h4>
+
+                <p>Tag &lt;code&gt; serve para representar um trecho de código no HTML,e a tag &lt;pre&gt; serve para pré-formatar um texto. <br>
+                    Ex:
+<pre>
+    <code>
+        var str = 'Terminal Root';
+            
+        if(str.match(/Root/)){
+            document.write('Encontrou');
+        }else{
+            document.write('Palavra Não Encontrada');
+        }
+    </code>
+</pre>
+                </p>
+
+                <p>
+                    Após executar o método <code>push()</code> obtive o retorno <samp lang="en-us">Undefined has not a push function</samp>
+                </p>
+
+                <p>Para copiar pressione as teclas <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
+            </article>
+
+            <article class="sub-title__tipografia">
+                <h4>Datas e horários</h4>
+
+                <p>O evento acorrerá em <time datetime="2030-08-25">25 de Agosto de 2030</time>.</p>
+                <p>O evento acorrerá em <time datetime="2030-08-25">25/08/2030</time>.</p>
+                <p>O evento ocorrerá às <time datetime="2030-08-25T20:00:00-03:00">20h00 do dia 25 de agosto de 2030</time> </p>
+                <p>O evento ocorrerá às 20h00 do dia<del> 25 de agosto de 2030</del> <ins><time datetime="2030-08-26">26 de agosto de 2030</time></ins></p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
