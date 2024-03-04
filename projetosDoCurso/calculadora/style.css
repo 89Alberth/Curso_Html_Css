@@ -1,0 +1,127 @@
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(0deg, rgb(53, 90, 209) 0%, rgba(90, 161, 219, 1) 100%);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    display: grid;
+    gap: 10px;
+    width: 300px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+    border: 2px outset rgb(34, 33, 33);
+    box-shadow: 0 0 9px  rgb(0, 0, 0);
+    padding: 20px;
+
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1.8fr repeat(5, 1fr);
+
+    grid-template-areas: 
+    "display       display      display     display"
+    "ac            porcento     mult        divi"
+    "sete          oito         nove        igual"
+    "quatro        cinco        seis        menos"
+    "um            dois         tres        mais"
+    "zero          zero         ponto       mais"
+    ;
+}
+
+.grid-item {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 26px;
+    border-radius: 3px;
+    border: 3px  groove rgb(0, 0, 0);
+    box-shadow: 0 0 3px black;
+}
+
+
+.display {
+    grid-area: display;
+    justify-content: end;
+    padding: 10px;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.button-ac {
+    grid-area: ac;
+}
+
+.button-porc {
+    grid-area: porcento;
+}
+
+.button-mult {
+    grid-area: mult;
+}
+
+.button-div {
+    grid-area: divi;
+}
+
+.button-7 {
+    grid-area: sete;
+}
+
+.button-8 {
+    grid-area: oito;
+}
+
+.button-9 {
+    grid-area: nove;
+}
+
+.button-igual {
+    grid-area: igual;
+}
+
+.button-4 {
+    grid-area: quatro;
+}
+
+.button-5 {
+    grid-area: cinco;
+}
+
+.button-6 {
+    grid-area: seis;
+}
+
+.button-menos {
+    grid-area: menos;
+}
+
+.button-0 {
+    grid-area: zero;
+}
+
+.button-mais {
+    grid-area: mais;
+}
+
+.button-1 {
+    grid-area: um;
+}
+
+.button-2 {
+    grid-area: dois;
+}
+
+.button-3 {
+    grid-area: tres;
+}
