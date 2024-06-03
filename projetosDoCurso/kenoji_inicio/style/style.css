@@ -1,0 +1,145 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-image: radial-gradient(ellipse at 0 0, #fff8ce, #ffb61d);
+}
+
+header{
+    padding: 50px 0;
+}
+
+main{
+    display: flex;
+    gap: 5rem;
+    
+}
+
+main > *{
+    flex: 1 0 0;
+}
+
+section strong{
+    color: rgb(201, 38, 38);
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 4.12rem;
+}
+
+p{
+    font-weight: 300;
+}
+
+form input{
+    padding: 1rem;
+    border: 1px solid #28293e;
+    border-radius: 6px;
+    outline: none;
+    font-family: inherit;
+}
+
+form input[type="submit"]{
+    background-color: #031d44;
+    color: white;
+}
+
+form input[type="text"]:focus{
+    outline: 1px solid #031d44;
+}
+
+form input[type="text"]::placeholder{
+    color: #28293e;
+}
+
+form input[type = "text"]{
+    background-color: transparent;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+#wrapper{
+    margin: auto;
+    max-width: 1400px;
+}
+
+.animation{
+    position: relative;
+}
+
+.animation img{
+    position: absolute;
+}
+
+.animation img:nth-child(6){
+    right: 65px;
+    bottom: -25px;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.animation img:nth-child(5){
+    top: -100px;
+    left: 100px;
+    animation-name: move;
+    animation-duration: 3.5s;
+    animation-delay: 2;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.animation img:nth-child(4){
+    bottom: -100px;
+    left: 80px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.animation img:nth-child(1){
+    left: -80px;
+    top: 140px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.animation img:nth-child(2){
+    right: 110px;
+    top: -25px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.animation img:nth-child(3){
+    right: 110px;
+    top: -25px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move{
+    from{
+        transform: translate(0, 0);
+    }
+
+    to{
+        transform: translate(20px, 30px);
+    }
+}

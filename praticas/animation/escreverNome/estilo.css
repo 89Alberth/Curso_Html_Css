@@ -1,0 +1,52 @@
+
+span::before
+{
+    content: "|";
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation-name: animarNome;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animarNome{
+    0% {
+        content: "|";
+    }
+
+    14.28% {
+        content: "A|";
+    }
+
+    28.56% {
+        content: "Al|";
+    }
+
+    42.84% {
+        content: "Alb|";
+    }
+
+    57.12% {
+        content: "Albe|";
+    }
+
+    65% {
+        content: "Alb|";
+    }
+
+    68% {
+        content: "Albe|";
+    }
+
+    71.4% {
+        content: "Alber|";
+    }
+
+    85.68% {
+        content: "Albert|";
+    }
+
+    100% {
+        content: "Alberth|";
+    }
+}
