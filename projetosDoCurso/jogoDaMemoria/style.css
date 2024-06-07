@@ -1,0 +1,106 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: Roboto;
+    font-size: 56px;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 100;
+}
+
+body{
+    background-image: linear-gradient(45deg, rgb(34, 130, 240), rgb(168, 54, 243));
+    height: 100vh;
+}
+
+main{
+    width: 880px;
+    margin: 70px auto 0;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px -10px black;
+}
+
+.controls{
+    clip: rect(1px 1px 1px 1px) ;
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+.game{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 120px);
+    gap: 1rem;
+}
+
+.cards{
+    position: relative;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+    transition: transform .8s;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
+.cards img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+.card-front{
+    transform: rotateY(-180deg);
+}
+
+main:has(#check_1:checked) .game .card_1,
+main:has(#check_2:checked) .game .card_2,
+main:has(#check_3:checked) .game .card_3,
+main:has(#check_4:checked) .game .card_4,
+main:has(#check_5:checked) .game .card_5,
+main:has(#check_6:checked) .game .card_6,
+main:has(#check_7:checked) .game .card_7,
+main:has(#check_8:checked) .game .card_8,
+main:has(#check_9:checked) .game .card_9,
+main:has(#check_10:checked) .game .card_10,
+main:has(#check_11:checked) .game .card_11,
+main:has(#check_12:checked) .game .card_12,
+main:has(#check_13:checked) .game .card_13,
+main:has(#check_14:checked) .game .card_14,
+main:has(#check_15:checked) .game .card_15,
+main:has(#check_16:checked) .game .card_16
+{
+    transform: rotateY(180deg);
+}
+
+main:has(#check_1:focus-visible) .game .card_1,
+main:has(#check_2:focus-visible) .game .card_2,
+main:has(#check_3:focus-visible) .game .card_3,
+main:has(#check_4:focus-visible) .game .card_4,
+main:has(#check_5:focus-visible) .game .card_5,
+main:has(#check_6:focus-visible) .game .card_6,
+main:has(#check_7:focus-visible) .game .card_7,
+main:has(#check_8:focus-visible) .game .card_8,
+main:has(#check_9:focus-visible) .game .card_9,
+main:has(#check_10:focus-visible) .game .card_10,
+main:has(#check_11:focus-visible) .game .card_11,
+main:has(#check_12:focus-visible) .game .card_12,
+main:has(#check_13:focus-visible) .game .card_13,
+main:has(#check_14:focus-visible) .game .card_14,
+main:has(#check_15:focus-visible) .game .card_15,
+main:has(#check_16:focus-visible) .game .card_16
+{
+    outline: 2px solid red;
+    outline-offset: 2px;
+}

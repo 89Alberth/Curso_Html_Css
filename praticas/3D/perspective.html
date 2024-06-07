@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspectiva</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .cena1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            width: 400px;
+            aspect-ratio: 1;
+            border: 1px solid black;
+            perspective: 400px;
+            
+            
+        }
+
+            
+
+        .plano {
+            background-color: rgb(8, 176, 253);
+            transition: all;
+            transition-duration: .5s;
+            transition-timing-function: linear;
+            font-size: 2rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: beige;
+            transform: rotateY(30deg);
+            backface-visibility: hidden;
+        }
+           
+    </style>
+</head>
+<body>
+    <h1>Perspectiva</h1>
+    <div class="cena1">
+        <div class="plano">Plano</div>
+        <div class="plano">Plano</div>
+        <div class="plano">Plano</div>
+        <div class="plano">Plano</div>
+        <div class="plano">Plano</div>
+        <div class="plano">Plano</div>
+        <div class="plano">Plano</div>
+        <div class="plano">Plano</div>
+        <div class="plano">Plano</div>
+    </div>
+
+</body>
+</html>
